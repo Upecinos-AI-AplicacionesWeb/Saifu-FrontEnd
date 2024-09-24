@@ -1,11 +1,10 @@
 <script setup>
-
+import Toolbar from './shared/components/toolbar.component.vue';
 </script>
 
 <template>
-  <h1>
-    Saifu
-  </h1>
+<Toolbar/>
+
 </template>
 
 <style scoped>
