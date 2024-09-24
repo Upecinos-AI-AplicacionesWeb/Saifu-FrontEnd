@@ -1,0 +1,52 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "hashedpassword1",
+      "image_url": "https://example.com/user1.jpg"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "hashedpassword2",
+      "image_url": "https://example.com/user2.jpg"
+    }
+  ],
+  "personas": [
+    {
+      "id_persona": 1,
+      "id_usuario": 1,
+      "nombre": "John",
+      "apellido": "Doe",
+      "edad": 30,
+      "ocupacion": "Ingeniero de Software"
+    },
+    {
+      "id_persona": 2,
+      "id_usuario": 2,
+      "nombre": "Jane",
+      "apellido": "Smith",
+      "edad": 28,
+      "ocupacion": "Diseñadora Gráfica"
+    }
+  ],
+  "datos_financieros": [
+    {
+      "id_dato_financiero": 1,
+      "id_usuario": 1,
+      "tipo_dato": "ingreso",
+      "monto": 5000.00,
+      "fecha": "2023-05-01",
+      "descripcion": "Salario mensual"
+    },
+    {
+      "id_dato_financiero": 2,
+      "id_usuario": 1,
+      "tipo_dato": "gasto",
+      "monto": 1000.00,
+      "fecha": "2023-05-05",
+      "descripcion": "Alquiler"
+    }
+  ]
+}
