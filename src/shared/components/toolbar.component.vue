@@ -1,14 +1,26 @@
 <script>
 import Sidebar  from "./sidebar.component.vue";
+import { useRouter } from 'vue-router';
 
 export default {
   components: {
     Sidebar
   },
+  setup() {
+    const router = useRouter();
+
+    function navigateToMainPage() {
+      router.push('/');
+    }
+
+    return {
+      navigateToMainPage
+    }
+  },
   data() {
     return {
       isSidebarVisible: false // Estado para controlar la visibilidad del sidebar
-    };
+    }
   },
   methods: {
     toggleSidebar() {
@@ -23,10 +35,10 @@ export default {
     <div class="c-toolbar">
       <pv-toolbar>
         <template #start>
-
-          <img src="../../assets/logo.png" width="20%">
+          <button @click="navigateToMainPage" class="logo-button">
+            <img src="../../assets/logo.png" width="20%">
+          </button>
           <h1 style="padding-left: 0.5rem;">Saifu</h1>
-
         </template>
         <template #end>
           <button class="hamburger-button" @click="toggleSidebar">
