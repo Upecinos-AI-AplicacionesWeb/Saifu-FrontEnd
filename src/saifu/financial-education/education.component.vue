@@ -1,6 +1,6 @@
 <template>
+  <Toolbar />
   <div class="financial-education-container">
-    <Toolbar />
     <div class="financial-education-menu">
       <div class="menu-content">
 
@@ -64,6 +64,9 @@ export default {
 };
 </script>
 <style scoped>
+  div{
+    font-family: 'Nunito', sans-serif;
+  }
   .financial-education-container {
     max-width: 1000px;
   margin: auto;
