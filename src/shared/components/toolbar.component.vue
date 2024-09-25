@@ -35,10 +35,10 @@ export default {
     <div class="c-toolbar">
       <pv-toolbar>
         <template #start>
-          <button @click="navigateToMainPage" class="logo-button">
-            <img src="../../assets/logo.png" width="20%">
-          </button>
+
+          <img src="../../assets/logo.png" width="20%">
           <h1 style="padding-left: 0.5rem;">Saifu</h1>
+
         </template>
         <template #end>
           <button class="hamburger-button" @click="toggleSidebar">
@@ -57,6 +57,7 @@ export default {
 
 <style>
 .app-container {
+
 }
 
 .c-toolbar {

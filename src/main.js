@@ -35,11 +35,7 @@ import router from './router/index.js';
 
 const app = createApp(App);
 
-app.use(PrimeVue, { ripple: true, theme: { preset: Aura, options: {
-            prefix: 'p',
-            darkModeSelector: 'system',
-            cssLayer: false
-        } } });
+app.use(PrimeVue);
 
 app.component('pv-button', Button)
     .component('pv-card', Card)
