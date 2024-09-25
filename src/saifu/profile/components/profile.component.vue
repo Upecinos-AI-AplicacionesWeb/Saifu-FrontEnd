@@ -7,6 +7,7 @@
           <p>{{ person.username }}</p>
           <p>Se unió en septiembre de 2024</p>
           <p>{{ person.familyMemberCount }} miembros registrados</p>
+          <button @click="navigateToEditProfile" class="edit-profile-button">Editar Perfil</button>
         </div>
         <div class="profile-image-container">
           <img :src="person.image_url" alt="Profile Picture" class="profile-image">
@@ -69,11 +70,17 @@
 <script>
 import { ref, onMounted } from 'vue';
 import { personService } from '../services/person.service.js';
+import { useRouter } from 'vue-router';
 
 export default {
   name: 'Profile',
   setup() {
-    const person = ref(null);
+    const person = ref(null)
+    const router = useRouter();
+
+    function navigateToEditProfile() {
+      router.push('/profile-edit');
+    }
 
     onMounted(async () => {
       try {
@@ -86,6 +93,7 @@ export default {
 
     return {
       person,
+      navigateToEditProfile
     };
   }
 };
@@ -261,5 +269,20 @@ h3 {
   margin-top: 0;
   margin-bottom: 1rem;
   color: #333;
+}
+
+.edit-profile-button {
+  background-color: #e6c35c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.edit-profile-button:hover {
+  background-color: #d4b14e;
 }
 </style>
