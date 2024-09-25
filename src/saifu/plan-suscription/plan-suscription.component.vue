@@ -9,13 +9,12 @@ export default {
 </script>
 
 <template>
-  <div class="plan-subscription-container">
   <Toolbar/>
+  <div class="plan-subscription-container">
   <!-- Contenido de suscripción de planes -->
   <div class="plan-subscription">
     <h1>Selecciona un plan</h1>
     <div class="plans-container">
-
       <!-- Plan Básico -->
       <div class="plan-card basic">
         <h2>Básico</h2>
@@ -57,10 +56,14 @@ export default {
 </template>
 
 <style>
+div{
+  font-family: 'Nunito', sans-serif;
+}
 .plan-subscription-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
-  padding: 40px;
+  margin-top: 20px;
+  padding: 10px;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -74,7 +77,7 @@ export default {
 
 .plans-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
   margin-top: 40px;
 }
