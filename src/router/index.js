@@ -8,8 +8,8 @@ import RegisterTransaction from "../saifu/registerTransaction/registerTransactio
 import RegisterData from "../saifu/registerData/registerData.vue";
 import EducationComponent from "../saifu/financial-education/education.component.vue";
 import PlanSubscription from "../saifu/plan-suscription/plan-suscription.component.vue";
-
-
+import PaymentComponent from "../saifu/payment/payment.component.vue";
+import ChallengesComponent from "../saifu/financial-challenges/challenges.component.vue";
 const routes = [
     { path: '/', component: MainPage },
     { path: '/profile', component: Profile },
@@ -20,8 +20,9 @@ const routes = [
     
     { path:'/addTransaction',component:AddTransaction},
     { path:'/registerTransaction',component:RegisterTransaction},
-    { path:'/registerData',component:RegisterData}
-
+    { path:'/registerData',component:RegisterData},
+    { path: '/payment',component: PaymentComponent},
+    {path:'/challenges',component: ChallengesComponent}
 ];
 
 
