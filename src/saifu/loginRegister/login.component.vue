@@ -3,7 +3,7 @@
     <pv-card class="auth-card">
       <template #content>
         <div class="content-wrapper">
-          <img src="../../assets/login_image.png" alt="Crear Cuenta Saifu" class="auth-image" />
+          <img src="../../assets/LoginRegisterImage.png" alt="Crear Cuenta Saifu" class="auth-image" />
 
           <div class="auth-form">
             <h2>Bienvenidos a Saifu!</h2>
