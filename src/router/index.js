@@ -2,8 +2,13 @@ import { createRouter, createWebHistory } from 'vue-router';
 import MainPage from '../saifu/profile/components/main-page.component.vue';
 import Profile from '../saifu/profile/components/profile.component.vue';
 import ProfileEdit from '../saifu/profile/components/profile-edit.component.vue';
+import AddTransaction from "../saifu/addTransaction/addTransaction.vue";
+import Login from "../saifu/loginRegister/Login.vue";
+
+
 import EducationComponent from "../saifu/financial-education/education.component.vue";
 import PlanSubscription from "../saifu/plan-suscription/plan-suscription.component.vue";
+
 
 const routes = [
     { path: '/', component: MainPage },
@@ -11,6 +16,10 @@ const routes = [
     { path: '/profile-edit', component: ProfileEdit },
     { path:'/education',component:EducationComponent},
     { path:'/suscription',component:PlanSubscription},
+    { path: '/login', component: Login},
+    { path:'/education',component:EducationComponent},
+    { path:'/addTransaction',component:AddTransaction}
+
 ];
 
 
