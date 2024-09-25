@@ -7,12 +7,15 @@ import Login from "../saifu/loginRegister/Login.vue";
 
 
 import EducationComponent from "../saifu/financial-education/education.component.vue";
+import PlanSubscription from "../saifu/plan-suscription/plan-suscription.component.vue";
 
 
 const routes = [
     { path: '/', component: MainPage },
     { path: '/profile', component: Profile },
     { path: '/profile-edit', component: ProfileEdit },
+    { path:'/education',component:EducationComponent},
+    { path:'/suscription',component:PlanSubscription},
     { path: '/login', component: Login},
     { path:'/education',component:EducationComponent},
     { path:'/addTransaction',component:AddTransaction}
