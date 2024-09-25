@@ -1,4 +1,7 @@
 ﻿<template>
+  <div>
+    <ToolbarComponent/>
+  </div>
   <div class="profile">
     <div class="profile-content" v-if="person">
       <div class="profile-header">
@@ -65,15 +68,20 @@
       </div>
     </div>
   </div>
+
+
 </template>
 
 <script>
 import { ref, onMounted } from 'vue';
 import { personService } from '../services/person.service.js';
 import { useRouter } from 'vue-router';
-
+import ToolbarComponent from "../../../shared/components/toolbar.component.vue";
 export default {
   name: 'Profile',
+  components:{
+    ToolbarComponent
+  },
   setup() {
     const person = ref(null)
     const router = useRouter();

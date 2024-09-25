@@ -35,10 +35,10 @@ export default {
     <div class="c-toolbar">
       <pv-toolbar>
         <template #start>
-
           <img src="../../assets/logo.png" width="20%">
-          <h1 style="padding-left: 0.5rem;">Saifu</h1>
-
+          <router-link to="/" style="color: white; text-decoration: none;">
+            <h1 style="padding-left: 0.5rem;">Saifu</h1>
+          </router-link>
         </template>
         <template #end>
           <button class="hamburger-button" @click="toggleSidebar">

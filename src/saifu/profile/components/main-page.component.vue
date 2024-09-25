@@ -1,4 +1,7 @@
 ﻿<template>
+  <div>
+    <ToolbarComponent/>
+  </div>
   <div class="dashboard">
     <main class="main-content">
       <h1>Hola {{ person ? person.nombre : 'Usuario' }}, bienvenido a Saifu!</h1>
@@ -12,7 +15,7 @@
             Registro de Transacciones
             <span class="arrow">›</span>
           </button>
-          <button class="btn btn-primary" @click="showFinancialData">
+          <button class="btn btn-primary" @click="showTransactionData">
             Registro de Datos Financieros
             <span class="arrow">›</span>
           </button>
@@ -33,12 +36,15 @@
 <script>
 import { ref, onMounted } from 'vue';
 import { personService } from '../services/person.service';
+import ToolbarComponent from "../../../shared/components/toolbar.component.vue";
+import {useRouter} from "vue-router";
 
 export default {
   name: 'Dashboard',
+  components: {ToolbarComponent},
   setup() {
     const person = ref(null);
-
+    const router = useRouter();
     onMounted(async () => {
       try {
         const userId = 1; // Assuming we're using the first user
@@ -50,21 +56,28 @@ export default {
 
     const showFinancialData = () => {
       console.log('Navigate to financial data page');
+      router.push('/registerTransaction'); // Redirige a la ruta /addTransaction
     };
-
+    const showTransactionData = () => {
+      console.log('Navigate to financial data page');
+      router.push('/addTransaction'); // Redirige a la ruta /addTransaction
+    };
     const showReports = () => {
       console.log('Navigate to reports page');
+      router.push('/registerTransaction'); // Redirige a la ruta /registerTransaction
     };
 
     const showEducation = () => {
       console.log('Navigate to education page');
+      router.push('/education'); // Redirige a la ruta /education
     };
 
     return {
       person,
       showFinancialData,
       showReports,
-      showEducation
+      showEducation,
+      showTransactionData
     };
   }
 };

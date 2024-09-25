@@ -308,6 +308,7 @@ export default {
   padding: 12px 15px;
   text-align: center;
   border-bottom: 1px solid #ccc;
+  font-size: 1rem;
 }
 
 .transaction-table th {

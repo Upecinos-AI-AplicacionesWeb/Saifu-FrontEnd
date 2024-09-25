@@ -17,7 +17,7 @@ const routes = [
     { path:'/education',component:EducationComponent},
     { path:'/suscription',component:PlanSubscription},
     { path: '/login', component: Login},
-    { path:'/education',component:EducationComponent},
+    
     { path:'/addTransaction',component:AddTransaction},
     { path:'/registerTransaction',component:RegisterTransaction},
     { path:'/registerData',component:RegisterData},
