@@ -53,16 +53,16 @@
 
 .card-title {
   text-align: left;
-  font-size: 1.5rem; /* Aumenta el tamaño del texto */
-  border-bottom: 1px solid #000; /* Agrega una línea debajo del título */
-  padding-bottom: 0.5rem; /* Espacio entre el texto y la línea */
+  font-size: 1.5rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
 }
 
 .inner-card-title {
   text-align: left;
-  font-size: 1.25rem; /* Aumenta el tamaño del texto */
-  border-bottom: 1px solid #000; /* Agrega una línea debajo del título */
-  padding-bottom: 0.5rem; /* Espacio entre el texto y la línea */
+  font-size: 1.25rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
 }
 
 .card-content {
@@ -95,9 +95,9 @@
 }
 
 .inner-card {
-  border: 2px solid #000; /* Aumenta el grosor del borde y cambia su color */
-  padding: 1rem; /* Agrega un poco de padding */
-  border-radius: 8px; /* Opcional: agrega bordes redondeados */
-  margin-bottom: 1rem; /* Agrega espaciado entre las cards */
+  border: 2px solid #000;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 </style>

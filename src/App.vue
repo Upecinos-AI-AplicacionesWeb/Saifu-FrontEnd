@@ -1,9 +1,10 @@
 <script setup>
 
+import FinancialTheme from '../src/saifu/components/financial-theme.component.vue';
 
 </script>
 <template>
-
+  <FinancialTheme></FinancialTheme>
 </template>
 
 <style scoped>

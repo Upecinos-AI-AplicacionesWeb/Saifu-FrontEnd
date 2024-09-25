@@ -94,8 +94,8 @@ const filteredCards = computed(() => {
 
 .card-image {
   width: 100%;
-  height: 200px; /* Altura fija para todas las imágenes */
-  object-fit: cover; /* Ajusta la imagen para que cubra el área sin distorsión */
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-content {
