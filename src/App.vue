@@ -3,9 +3,10 @@ import Toolbar from './shared/components/toolbar.component.vue';
 </script>
 
 <template>
-<Toolbar/>
-
+  <Toolbar/>
+  <router-view/>
 </template>
+
 
 <style scoped>
 .logo {

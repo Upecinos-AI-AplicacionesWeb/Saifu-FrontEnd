@@ -3,14 +3,12 @@
     {
       "id": 1,
       "username": "user1",
-      "password": "hashedpassword1",
-      "image_url": "https://example.com/user1.jpg"
+      "password": "hashedpassword1"
     },
     {
       "id": 2,
       "username": "user2",
-      "password": "hashedpassword2",
-      "image_url": "https://example.com/user2.jpg"
+      "password": "hashedpassword2"
     }
   ],
   "personas": [
@@ -20,7 +18,22 @@
       "nombre": "John",
       "apellido": "Doe",
       "edad": 30,
-      "ocupacion": "Ingeniero de Software"
+      "ocupacion": "Ingeniero de Software",
+      "image_url": "https://i.postimg.cc/ydJwP01B/Perfil-Profesional-63-819x1024.jpg",
+      "email": "johndoe@gmail.com",
+      "num_family_members": 2,
+      "family_members": [
+        {
+          "id": 1,
+          "name": "Mindi Doe",
+          "imageUrl": "https://i.postimg.cc/1Rg42dCc/46a59977f84a3615b2ccdee1a05fef2b.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Jimmy Doe",
+          "imageUrl": "https://i.postimg.cc/XXMRzq2h/images.jpg"
+        }
+      ]
     },
     {
       "id_persona": 2,
@@ -28,7 +41,27 @@
       "nombre": "Jane",
       "apellido": "Smith",
       "edad": 28,
-      "ocupacion": "Diseñadora Gráfica"
+      "ocupacion": "Diseñadora Gráfica",
+      "image_url": "https://i.postimg.cc/FHp5s9Ct/Poses-Perfil-Profesional-Mujeres-ago-10-2023-1-819x1024.jpg",
+      "email": "janesmith@gmail.com",
+      "num_family_members": 3,
+      "family_members": [
+        {
+          "id": 1,
+          "name": "John Smith",
+          "imageUrl": "https://i.postimg.cc/Cx01ZxFm/Poses-Perfil-Profesional-Hombresdic-27-2022-3-819x1024.webp"
+        },
+        {
+          "id": 2,
+          "name": "Jimmy Smith",
+          "imageUrl": "https://i.postimg.cc/Njx0RvFY/editor-I20190114111112.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Jenny Smith",
+          "imageUrl": "https://i.postimg.cc/d0HtSRGx/professional-profile-pictures-1427-x-1920-txfewtw6mcg0y6hk.jpg"
+        }
+      ]
     }
   ],
   "datos_financieros": [
@@ -47,6 +80,37 @@
       "monto": 1000.00,
       "fecha": "2023-05-05",
       "descripcion": "Alquiler"
+    }
+  ],
+  "subscriptionPlans": [
+    {
+      "id": 1,
+      "name": "Básico",
+      "price": 10,
+      "features": [
+        "Agregar hasta 5 miembros",
+        "Generar 02 reportes max"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Regular",
+      "price": 35.85,
+      "features": [
+        "Acceso a material educativo adicional",
+        "Creación de foros en comunidad"
+      ],
+      "recommended": true
+    },
+    {
+      "id": 3,
+      "name": "Premium",
+      "price": 67.75,
+      "features": [
+        "Creación de biblioteca virtual",
+        "Acceso a información de alta calidad",
+        "Registro ilimitado de datos financieros"
+      ]
     }
   ]
 }
