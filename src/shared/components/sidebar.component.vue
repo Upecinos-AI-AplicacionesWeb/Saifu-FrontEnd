@@ -13,7 +13,7 @@ export default {
       }
     }
 
-    return { selectItem };
+    return { selectItem, router };
   }
 }
 </script>
@@ -28,43 +28,43 @@ export default {
         </button>
       </li>
       <li>
-        <button>
+        <button @click="router.push('/')">
           <i class="pi pi-info-circle"></i>
           Información de la aplicación
         </button>
       </li>
       <li>
-        <button>
+        <button @click="router.push('/invite-friend')">
           <i class="pi pi-users"></i>
           Invitar Amigos
         </button>
       </li>
       <li>
-        <button>
+        <button @click="router.push('/client-service')">
           <i class="pi pi-headset"></i>
           Servicio al cliente
         </button>
       </li>
       <li>
-        <button>
+        <button @click="router.push('/notifications')">
           <i class="pi pi-bell"></i>
           Notificaciones
         </button>
       </li>
       <li>
-        <button>
+        <button @click="router.push('/suscription')">
           <i class="pi pi-dollar"></i>
           Suscripción
         </button>
       </li>
       <li>
-        <button>
+        <button @click="router.push('/app-recommendation')">
           <i class="pi pi-thumbs-up"></i>
           Recomendar Aplicación
         </button>
       </li>
       <li>
-        <button>
+        <button @click="router.push('/login')">
           <i class="pi pi-sign-out"></i>
           Cerrar Sesión
         </button>

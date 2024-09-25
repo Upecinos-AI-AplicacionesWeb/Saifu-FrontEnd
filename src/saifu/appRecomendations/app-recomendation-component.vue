@@ -1,5 +1,8 @@
 <script>
+import ToolbarComponent from "../../shared/components/toolbar.component.vue";
+
 export default {
+  components: {ToolbarComponent},
   methods: {
     goBack() {
       window.history.back();
@@ -18,6 +21,9 @@ export default {
 }
 </script>
 <template>
+  <div>
+    <ToolbarComponent/>
+  </div>
   <div class="recommend-app">
 
     <main class="main-content">

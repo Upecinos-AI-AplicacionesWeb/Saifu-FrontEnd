@@ -1,5 +1,9 @@
 <script>
+import ToolbarComponent from "../../shared/components/toolbar.component.vue";
 export default {
+  components:{
+    ToolbarComponent
+  },
   methods: {
     goBack() {
       window.history.back();
@@ -18,6 +22,9 @@ export default {
 }
 </script>
 <template>
+  <div>
+    <ToolbarComponent/>
+  </div>
   <section class="customer-service">
     <div class="service-container">
       <div class="back-button-container">

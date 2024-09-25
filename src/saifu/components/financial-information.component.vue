@@ -1,7 +1,11 @@
 <script setup>
+import ToolbarComponent from "../../shared/components/toolbar.component.vue";
 </script>
 
 <template>
+  <div>
+    <ToolbarComponent/>
+  </div>
   <pv-card>
     <template #header>
       <pv-button class="left-aligned-button">

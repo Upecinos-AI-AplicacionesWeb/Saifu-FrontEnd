@@ -3,7 +3,7 @@ import { ref, computed } from 'vue';
 import image1 from '../../assets/image1.jfif';
 import image2 from '../../assets/image2.jfif';
 import image3 from '../../assets/image3.jfif';
-
+import ToolbarComponent from "../../shared/components/toolbar.component.vue";
 const searchTerm = ref('');
 const cards = [
   { id: 1, title: 'Crédito al consumidor', image: image1 },
@@ -19,6 +19,9 @@ const filteredCards = computed(() => {
 });
 </script>
 <template>
+  <div>
+    <ToolbarComponent/>
+  </div>
   <pv-card>
     <template #header>
       <div class="header-container">
