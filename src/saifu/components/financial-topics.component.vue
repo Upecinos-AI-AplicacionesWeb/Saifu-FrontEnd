@@ -22,7 +22,7 @@ const filteredCards = computed(() => {
   <pv-card>
     <template #header>
       <div class="header-container">
-        <pv-button>Atras</pv-button>
+        <pv-button><i class="pi pi-arrow-left"></i>Atras</pv-button>
       </div>
     </template>
     <template #content>
