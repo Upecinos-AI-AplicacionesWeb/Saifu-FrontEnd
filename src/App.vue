@@ -1,9 +1,10 @@
 <script setup>
-import Toolbar from './shared/components/toolbar.component.vue';
-</script>
 
+
+</script>
 <template>
-<Toolbar/>
+
+
 
 </template>
 
