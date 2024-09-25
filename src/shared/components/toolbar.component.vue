@@ -1,14 +1,26 @@
 <script>
 import Sidebar  from "./sidebar.component.vue";
+import { useRouter } from 'vue-router';
 
 export default {
   components: {
     Sidebar
   },
+  setup() {
+    const router = useRouter();
+
+    function navigateToMainPage() {
+      router.push('/');
+    }
+
+    return {
+      navigateToMainPage
+    }
+  },
   data() {
     return {
       isSidebarVisible: false // Estado para controlar la visibilidad del sidebar
-    };
+    }
   },
   methods: {
     toggleSidebar() {
@@ -45,6 +57,7 @@ export default {
 
 <style>
 .app-container {
+
 }
 
 .c-toolbar {

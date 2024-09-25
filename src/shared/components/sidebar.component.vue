@@ -1,10 +1,19 @@
 <script>
+import { useRouter } from 'vue-router';
+
 export default {
-  methods: {
-    selectItem(item) {
-      console.log(`Seleccionaste: ${item.name}`);
-      // Aquí puedes implementar la navegación o cualquier acción necesaria
+  setup() {
+    const router = useRouter();
+
+    function selectItem(item) {
+      if (item.name === 'Usuario') {
+        router.push('/profile');
+      } else {
+        console.log(`Seleccionaste: ${item.name}`);
+      }
     }
+
+    return { selectItem };
   }
 }
 </script>
@@ -13,7 +22,7 @@ export default {
   <div class="sidebar">
     <ul>
       <li>
-        <button>
+        <button @click="selectItem({ name: 'Usuario' })">
           <i class="pi pi-user"></i>
           Usuario
         </button>
