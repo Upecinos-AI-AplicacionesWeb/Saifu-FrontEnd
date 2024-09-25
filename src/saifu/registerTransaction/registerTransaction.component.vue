@@ -194,7 +194,7 @@ export default {
 }
 
 .pagination-info span {
-  font-size: 0.9rem;
+  font-size: 0.9  rem;
   color: #555;
 }
 
@@ -308,6 +308,7 @@ export default {
   padding: 12px 15px;
   text-align: center;
   border-bottom: 1px solid #ccc;
+  font-size: 1rem;
 }
 
 .transaction-table th {

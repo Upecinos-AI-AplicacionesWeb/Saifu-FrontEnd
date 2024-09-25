@@ -11,11 +11,11 @@
           <img src="/path-to-main-page.png" alt="User using laptop" class="dashboard-image">
         </div>
         <div class="action-buttons">
-          <button class="btn btn-primary" @click="showTransactionData">
+          <button class="btn btn-primary" @click="showFinancialData">
             Registro de Transacciones
             <span class="arrow">›</span>
           </button>
-          <button class="btn btn-primary" @click="showFinancialData">
+          <button class="btn btn-primary" @click="showTransactionData">
             Registro de Datos Financieros
             <span class="arrow">›</span>
           </button>
