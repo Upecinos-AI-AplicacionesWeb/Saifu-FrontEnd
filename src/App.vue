@@ -1,11 +1,12 @@
 <script setup>
-import Toolbar from './shared/components/toolbar.component.vue';
+
 </script>
 
 <template>
   <Toolbar/>
   <router-view/>
 </template>
+
 
 <style scoped>
 .logo {
