@@ -1,9 +1,12 @@
 <script setup>
 
 </script>
-<template>
 
+<template>
+  <Toolbar/>
+  <router-view/>
 </template>
+
 
 <style scoped>
 .logo {
