@@ -148,7 +148,7 @@ export default {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1rem;
-  font-size: 10% auto;
+  font-size: 10%;
 }
 
 
