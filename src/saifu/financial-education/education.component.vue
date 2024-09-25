@@ -70,7 +70,8 @@ export default {
   .financial-education-container {
     max-width: 1000px;
   margin: auto;
-  padding: 20px;
+    margin-top:20px;
+  padding: 0px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -80,6 +81,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+    padding:20px;
 }
 
   .menu-content {
@@ -101,7 +103,7 @@ export default {
 }
 
   .menu-info h2 {
-  margin: 0;
+  margin: 5px 0;
   font-size: 24px;
   font-weight: bold;
   color: #333;
@@ -119,7 +121,7 @@ export default {
 
   .menu-image {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -127,17 +129,17 @@ export default {
   .menu-buttons {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
 }
 
   .menu-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #4caf50;
+  background-color: #437F54;
   color: #fff;
   border: none;
-  padding: 15px 20px;
+  padding: 25px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
