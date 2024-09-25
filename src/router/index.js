@@ -4,8 +4,8 @@ import Profile from '../saifu/profile/components/profile.component.vue';
 import ProfileEdit from '../saifu/profile/components/profile-edit.component.vue';
 import AddTransaction from "../saifu/addTransaction/addTransaction.vue";
 import Login from "../saifu/loginRegister/Login.vue";
-
-
+import RegisterTransaction from "../saifu/registerTransaction/registerTransaction.vue";
+import RegisterData from "../saifu/registerData/registerData.vue";
 import EducationComponent from "../saifu/financial-education/education.component.vue";
 import PlanSubscription from "../saifu/plan-suscription/plan-suscription.component.vue";
 
@@ -18,7 +18,9 @@ const routes = [
     { path:'/suscription',component:PlanSubscription},
     { path: '/login', component: Login},
     { path:'/education',component:EducationComponent},
-    { path:'/addTransaction',component:AddTransaction}
+    { path:'/addTransaction',component:AddTransaction},
+    { path:'/registerTransaction',component:RegisterTransaction},
+    { path:'/registerData',component:RegisterData}
 
 ];
 
